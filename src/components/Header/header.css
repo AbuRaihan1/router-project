@@ -1,0 +1,18 @@
+.NavArea {
+  background: #f1eaea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 6px 8px lightgray;
+  padding: 0 30px;
+}
+
+.navLink a {
+  text-decoration: none;
+  background: rgb(194, 187, 187);
+  padding: 4px 15px;
+  border-radius: 6px;
+  margin: 10px;
+  color: black;
+  font-weight: 500;
+}
