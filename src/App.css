@@ -1,3 +1,67 @@
+.homeContent {
+  display: flex;
+  justify-content: space-between;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.homeContent > div {
+  width: 45%;
+  margin: 20px;
+}
+.descArea {
+  padding: 20px;
+  padding-top: 100px;
+}
+.descArea span {
+  background: #ff5200;
+  color: white;
+  padding: 2px 20px;
+  border-radius: 20px;
+}
+.descArea p {
+  font-size: 18px;
+  color: #615d5d;
+}
+.descArea h1 {
+  font-size: 32px;
+  margin-top: 0;
+}
+.imageArea img {
+  width: 100%;
+}
+.btnsArea {
+  display: flex;
+  align-items:center;
+  gap: 20px;
+}
+.btnsArea a:nth-child(1) {
+  outline: none;
+  /* background: #ff5200; */
+  padding: 10px 25px;
+  border-radius: 6px;
+  border: 2px solid #ff5200;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+  background: transparent;
+  color: black;
+  text-decoration: none;
+}
+
+.btnsArea a:nth-child(1):hover {
+  background: #ff5200;
+  color: white;
+}
+
+.btnsArea a {
+  color: #ff5200;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* home end  */
 .errorMsg img {
   width: 70%;
   height: 98vh;
@@ -95,7 +159,9 @@
   color: #ff5200;
   font-weight: bold;
 }
-
+.active {
+  color: red;
+}
 .showDetails {
   outline: none;
   color: white;
