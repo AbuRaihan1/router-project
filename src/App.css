@@ -4,3 +4,135 @@
   display: block;
   margin: auto;
 }
+
+.booksWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 20px;
+}
+.title {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  font-size: 27px;
+  padding: 20px;
+  visibility: hidden;
+}
+.bookItemWrapper {
+  margin: 15px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.bookItemWrapper a {
+  text-decoration: none;
+}
+.bookItemWrapper:hover {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  background: rgba(0, 0, 0, 0.664);
+  border-radius: 8px;
+}
+.bookItemWrapper:hover .title,
+.bookItemWrapper:hover .showDetails {
+  visibility: visible;
+}
+.bookItemWrapper img {
+  display: block;
+  margin: auto;
+}
+
+.bookDescWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  margin: 15px;
+}
+.bookDescWrapper > div {
+  width: 45%;
+}
+.bookdesc {
+  text-align-last: left;
+  padding: 20px;
+}
+.bookdesc h3 {
+  font-size: 25px;
+  text-align: left;
+}
+.bookdesc p {
+  text-align: justify;
+  font-size: 17px;
+}
+
+.buttonSide {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.buttonSide button {
+  outline: none;
+  color: white;
+  background: #ff5200;
+  padding: 10px 25px;
+  border-radius: 6px;
+  border: 1px solid #ff5200;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+.buttonSide button:hover {
+  background: #da4a08;
+}
+.buttonSide p {
+  color: #ff5200;
+  font-weight: bold;
+}
+
+.showDetails {
+  outline: none;
+  color: white;
+  background: #ff5200;
+  padding: 10px 25px;
+  border-radius: 6px;
+  border: 1px solid #ff5200;
+  cursor: pointer;
+  font-weight: bold;
+  /* font-size: 16px; */
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  visibility: hidden;
+}
+@media screen and (max-width: 1222px) {
+  .booksWrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 920px) {
+  .booksWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 740px) {
+  .bookDescWrapper {
+    flex-direction: column;
+  }
+  .bookDescWrapper > div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .booksWrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

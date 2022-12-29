@@ -3,16 +3,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 1px 1px 6px 8px lightgray;
+  box-shadow: 1px 1px 10px 4px lightgray;
   padding: 0 30px;
 }
 
 .navLink a {
   text-decoration: none;
-  background: rgb(194, 187, 187);
+  background: rgb(235, 229, 229);
   padding: 4px 15px;
   border-radius: 6px;
   margin: 10px;
   color: black;
   font-weight: 500;
+  transition: all 0.2s ease-in;
+}
+
+.navLink a:hover {
+  background: rgb(241, 69, 6);
+  color: white;
+}
+
+.activeClassName {
+  background: rgb(241, 69, 6);
+  color: white;
 }
